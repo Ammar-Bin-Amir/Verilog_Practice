@@ -37,7 +37,9 @@ This circuit, as the name describes is the modified form of half adder that is a
 
 ## **Execution** ##
 
-When the code has been written, then its time to execute it and check the result it on another simulator i.e. gtkwave which displays the waveforms. It is basically the part of Icarus Verilog comes along with the package when downloaded.
+### ***Verilog Terminal*** ###
+
+When the code has been written, then its time to execute it and check the result it on another simulator i.e. gtkwave which displays the waveforms. Gtkwave is basically the part of Icarus Verilog comes along with the package when downloaded.
 
 _Since, all the working has been done on Windows OS, therefore a slight difference would be seen for Linux OS users._
 
@@ -46,3 +48,10 @@ iverilog -o file_name_tb.vvp file_name_tb.v
 vvp file_name_tb.vvp
 gtkwave
 ```
+
+### ***Gtkwave Simulator*** ###
+
+When the window of gtkwave appears, select the vcd file by:
+File -> Open New Tab -> file_name_tb.vcd
+
+Now, select all the inputs and outputs to check the waveform and analyse the results.
