@@ -1,0 +1,91 @@
+$date
+	Mon Sep 18 14:16:56 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module day13_tb $end
+$var wire 1 ! out_ternary_operator $end
+$var wire 1 " out_if_else_block $end
+$var wire 1 # out_combinational_for_loop $end
+$var wire 1 $ out_case_statement $end
+$var wire 1 % out_and_or_tree $end
+$var reg 1 & a $end
+$var reg 1 ' b $end
+$var reg 1 ( sel $end
+$scope module uut $end
+$var wire 1 & a $end
+$var wire 1 ' b $end
+$var wire 1 $ out_and_or_tree $end
+$var wire 1 ) out_i $end
+$var wire 1 ( sel $end
+$var wire 2 * sel_i [1:0] $end
+$var wire 1 ! out_ternary_operator $end
+$var wire 2 + in_i [1:0] $end
+$var reg 1 " out_case_statement $end
+$var reg 1 % out_combinational_for_loop $end
+$var reg 1 # out_if_else_block $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 , i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 ,
+bx +
+bx *
+0)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#5
+0$
+0%
+b1 ,
+0#
+0"
+0!
+b1 *
+0(
+1'
+b10 +
+0&
+#10
+1$
+1%
+b1 ,
+1#
+1"
+1!
+0'
+b1 +
+1&
+#15
+0%
+b1 ,
+b10 *
+1(
+1'
+b10 +
+0&
+#20
+0$
+0!
+b1 ,
+0#
+0"
+0'
+b1 +
+1&
+#25

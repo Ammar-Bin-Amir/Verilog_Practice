@@ -1,0 +1,74 @@
+$date
+	Tue Sep 12 15:48:12 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module day14_tb $end
+$var wire 3 ! grants [2:0] $end
+$var reg 3 " requests [2:0] $end
+$scope module uut $end
+$var wire 3 # requests [2:0] $end
+$var reg 3 $ grants [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx $
+bx #
+bx "
+bx !
+$end
+#5
+b0 !
+b0 $
+b0 "
+b0 #
+#10
+b1 !
+b1 $
+b1 "
+b1 #
+#15
+b10 !
+b10 $
+b10 "
+b10 #
+#20
+b1 !
+b1 $
+b11 "
+b11 #
+#25
+b100 !
+b100 $
+b100 "
+b100 #
+#30
+b1 !
+b1 $
+b101 "
+b101 #
+#35
+b10 !
+b10 $
+b110 "
+b110 #
+#40
+b1 !
+b1 $
+b111 "
+b111 #
+#45
+b0 !
+b0 $
+b0 "
+b0 #
+#50

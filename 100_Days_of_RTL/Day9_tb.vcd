@@ -1,0 +1,90 @@
+$date
+	Mon Sep 11 13:47:04 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module day9_tb $end
+$var wire 3 ! gray_out [2:0] $end
+$var parameter 32 " W $end
+$var reg 3 # binary_in [2:0] $end
+$scope module uut $end
+$var wire 3 $ binary_in [2:0] $end
+$var wire 3 % gray_out [2:0] $end
+$var parameter 32 & W $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 ' i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 &
+b11 "
+$end
+#0
+$dumpvars
+b0 '
+bx %
+bx $
+bx #
+bx !
+$end
+#5
+b0 !
+b0 %
+b1 '
+b0 #
+b0 $
+#10
+b1 !
+b1 %
+b10 '
+b1 #
+b1 $
+#15
+b11 !
+b11 %
+b11 '
+b10 #
+b10 $
+#20
+b10 !
+b10 %
+b100 '
+b11 #
+b11 $
+#25
+b110 !
+b110 %
+b101 '
+b100 #
+b100 $
+#30
+b111 !
+b111 %
+b110 '
+b101 #
+b101 $
+#35
+b101 !
+b101 %
+b111 '
+b110 #
+b110 $
+#40
+b100 !
+b100 %
+b1000 '
+b111 #
+b111 $
+#45
+b0 !
+b0 %
+b1001 '
+b0 #
+b0 $

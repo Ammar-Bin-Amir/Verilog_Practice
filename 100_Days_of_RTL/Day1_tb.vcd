@@ -1,0 +1,75 @@
+$date
+	Wed Sep 06 13:53:32 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module day1_tb $end
+$var wire 1 ! out $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$var reg 1 $ sel $end
+$scope module uut $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 $ sel $end
+$var wire 1 ! out $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 % i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 %
+x$
+x#
+x"
+x!
+$end
+#5000
+1!
+b1 %
+1$
+1#
+0"
+#10000
+b10 %
+1"
+#15000
+0!
+b11 %
+0#
+#20000
+b100 %
+#25000
+b101 %
+#30000
+b110 %
+0$
+1#
+0"
+#35000
+1!
+b111 %
+1"
+#40000
+b1000 %
+0#
+#45000
+0!
+b1001 %
+1#
+0"
+#50000
+1!
+b1010 %
+1$
+1"

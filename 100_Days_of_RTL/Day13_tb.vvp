@@ -1,0 +1,191 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x55c3815d3800 .scope module, "day13_tb" "day13_tb" 2 4;
+ .timescale -9 -9;
+v0x55c3816013f0_0 .var "a", 0 0;
+v0x55c3816014b0_0 .var "b", 0 0;
+v0x55c381601550_0 .net "out_and_or_tree", 0 0, v0x55c381600e50_0;  1 drivers
+v0x55c381601650_0 .net "out_case_statement", 0 0, L_0x55c3816021f0;  1 drivers
+v0x55c381601720_0 .net "out_combinational_for_loop", 0 0, v0x55c381600fd0_0;  1 drivers
+v0x55c3816017c0_0 .net "out_if_else_block", 0 0, v0x55c381600d90_0;  1 drivers
+v0x55c381601890_0 .net "out_ternary_operator", 0 0, L_0x55c381601a30;  1 drivers
+v0x55c381601960_0 .var "sel", 0 0;
+S_0x55c3815d5700 .scope module, "uut" "day13" 2 9, 3 12 0, S_0x55c3815d3800;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "sel";
+    .port_info 3 /OUTPUT 1 "out_ternary_operator";
+    .port_info 4 /OUTPUT 1 "out_and_or_tree";
+    .port_info 5 /OUTPUT 1 "out_case_statement";
+    .port_info 6 /OUTPUT 1 "out_if_else_block";
+    .port_info 7 /OUTPUT 1 "out_combinational_for_loop";
+L_0x55c3815d4ff0 .functor NOT 1, v0x55c381601960_0, C4<0>, C4<0>, C4<0>;
+L_0x55c3815d5060 .functor BUFZ 1, v0x55c381601960_0, C4<0>, C4<0>, C4<0>;
+L_0x55c381601d50 .functor BUFZ 1, v0x55c3816013f0_0, C4<0>, C4<0>, C4<0>;
+L_0x55c381601e60 .functor BUFZ 1, v0x55c3816014b0_0, C4<0>, C4<0>, C4<0>;
+L_0x55c381601f50 .functor NOT 1, v0x55c381601960_0, C4<0>, C4<0>, C4<0>;
+L_0x55c381601fc0 .functor AND 1, L_0x55c381601f50, v0x55c3816013f0_0, C4<1>, C4<1>;
+L_0x55c3816020f0 .functor AND 1, v0x55c381601960_0, v0x55c3816014b0_0, C4<1>, C4<1>;
+L_0x55c3816021f0 .functor OR 1, L_0x55c381601fc0, L_0x55c3816020f0, C4<0>, C4<0>;
+v0x55c381600400_0 .net *"_ivl_12", 0 0, L_0x55c3815d5060;  1 drivers
+v0x55c381600500_0 .net *"_ivl_16", 0 0, L_0x55c381601d50;  1 drivers
+v0x55c3816005e0_0 .net *"_ivl_21", 0 0, L_0x55c381601e60;  1 drivers
+v0x55c3816006a0_0 .net *"_ivl_22", 0 0, L_0x55c381601f50;  1 drivers
+v0x55c381600780_0 .net *"_ivl_24", 0 0, L_0x55c381601fc0;  1 drivers
+v0x55c3816008b0_0 .net *"_ivl_26", 0 0, L_0x55c3816020f0;  1 drivers
+v0x55c381600990_0 .net *"_ivl_6", 0 0, L_0x55c3815d4ff0;  1 drivers
+v0x55c381600a70_0 .net "a", 0 0, v0x55c3816013f0_0;  1 drivers
+v0x55c381600b30_0 .net "b", 0 0, v0x55c3816014b0_0;  1 drivers
+v0x55c381600bf0_0 .net "in_i", 1 0, L_0x55c381601dc0;  1 drivers
+v0x55c381600cd0_0 .net "out_and_or_tree", 0 0, L_0x55c3816021f0;  alias, 1 drivers
+v0x55c381600d90_0 .var "out_case_statement", 0 0;
+v0x55c381600e50_0 .var "out_combinational_for_loop", 0 0;
+L_0x7fa7fc8a1018 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x55c381600f10_0 .net "out_i", 0 0, L_0x7fa7fc8a1018;  1 drivers
+v0x55c381600fd0_0 .var "out_if_else_block", 0 0;
+v0x55c381601090_0 .net "out_ternary_operator", 0 0, L_0x55c381601a30;  alias, 1 drivers
+v0x55c381601150_0 .net "sel", 0 0, v0x55c381601960_0;  1 drivers
+v0x55c381601210_0 .net "sel_i", 1 0, L_0x55c381601c10;  1 drivers
+E_0x55c3815a8b00 .event edge, v0x55c381601210_0, v0x55c381600bf0_0, v0x55c381600f10_0;
+E_0x55c3815e3960 .event edge, v0x55c381601150_0, v0x55c381600b30_0, v0x55c381600a70_0;
+E_0x55c3815cbe30 .event edge, v0x55c381601150_0, v0x55c381600a70_0, v0x55c381600b30_0;
+L_0x55c381601a30 .functor MUXZ 1, v0x55c3816013f0_0, v0x55c3816014b0_0, v0x55c381601960_0, C4<>;
+L_0x55c381601c10 .concat8 [ 1 1 0 0], L_0x55c3815d4ff0, L_0x55c3815d5060;
+L_0x55c381601dc0 .concat8 [ 1 1 0 0], L_0x55c381601d50, L_0x55c381601e60;
+S_0x55c3815e6970 .scope begin, "$ivl_for_loop0" "$ivl_for_loop0" 3 51, 3 51 0, S_0x55c3815d5700;
+ .timescale -9 -9;
+v0x55c3815e6b50_0 .var/i "i", 31 0;
+    .scope S_0x55c3815d5700;
+T_0 ;
+    %wait E_0x55c3815cbe30;
+    %load/vec4 v0x55c381601150_0;
+    %dup/vec4;
+    %pushi/vec4 0, 0, 1;
+    %cmp/u;
+    %jmp/1 T_0.0, 6;
+    %dup/vec4;
+    %pushi/vec4 1, 0, 1;
+    %cmp/u;
+    %jmp/1 T_0.1, 6;
+    %load/vec4 v0x55c381600a70_0;
+    %store/vec4 v0x55c381600d90_0, 0, 1;
+    %jmp T_0.3;
+T_0.0 ;
+    %load/vec4 v0x55c381600a70_0;
+    %store/vec4 v0x55c381600d90_0, 0, 1;
+    %jmp T_0.3;
+T_0.1 ;
+    %load/vec4 v0x55c381600b30_0;
+    %store/vec4 v0x55c381600d90_0, 0, 1;
+    %jmp T_0.3;
+T_0.3 ;
+    %pop/vec4 1;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0x55c3815d5700;
+T_1 ;
+    %wait E_0x55c3815e3960;
+    %load/vec4 v0x55c381601150_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %load/vec4 v0x55c381600b30_0;
+    %store/vec4 v0x55c381600fd0_0, 0, 1;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v0x55c381600a70_0;
+    %store/vec4 v0x55c381600fd0_0, 0, 1;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1, $push;
+    .scope S_0x55c3815d5700;
+T_2 ;
+    %wait E_0x55c3815a8b00;
+    %fork t_1, S_0x55c3815e6970;
+    %jmp t_0;
+    .scope S_0x55c3815e6970;
+t_1 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x55c3815e6b50_0, 0, 32;
+T_2.0 ;
+    %load/vec4 v0x55c3815e6b50_0;
+    %cmpi/s 1, 0, 32;
+    %jmp/0xz T_2.1, 5;
+    %load/vec4 v0x55c381601210_0;
+    %load/vec4 v0x55c3815e6b50_0;
+    %part/s 1;
+    %load/vec4 v0x55c381600bf0_0;
+    %load/vec4 v0x55c3815e6b50_0;
+    %part/s 1;
+    %and;
+    %load/vec4 v0x55c381600f10_0;
+    %or;
+    %store/vec4 v0x55c381600e50_0, 0, 1;
+    %load/vec4 v0x55c3815e6b50_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x55c3815e6b50_0, 0, 32;
+    %jmp T_2.0;
+T_2.1 ;
+    %end;
+    .scope S_0x55c3815d5700;
+t_0 %join;
+    %jmp T_2;
+    .thread T_2, $push;
+    .scope S_0x55c3815d3800;
+T_3 ;
+    %vpi_call 2 12 "$dumpfile", "Day13_tb.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55c3815d3800 {0 0 0};
+    %end;
+    .thread T_3;
+    .scope S_0x55c3815d3800;
+T_4 ;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c3816013f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c3816014b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c381601960_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c3816013f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c3816014b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c381601960_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c3816013f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c3816014b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c381601960_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c3816013f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c3816014b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c381601960_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 21 "$finish" {0 0 0};
+    %end;
+    .thread T_4;
+    .scope S_0x55c3815d3800;
+T_5 ;
+    %vpi_call 2 24 "$monitor", "a=%b b=%b sel=%b outT=%b outC=%b outIf=%b outFor=%b out&|=%b", v0x55c3816013f0_0, v0x55c3816014b0_0, v0x55c381601960_0, v0x55c381601890_0, v0x55c381601650_0, v0x55c3816017c0_0, v0x55c381601720_0, v0x55c381601550_0 {0 0 0};
+    %end;
+    .thread T_5;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "Day13_tb.v";
+    "./Day13.v";
