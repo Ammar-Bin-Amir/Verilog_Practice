@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Wed Oct 18 07:12:15 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/RTL_Design/Verilog_Practice/Tasks/Task3/Task3_tb.vcd"
+[dumpfile_mtime] "Wed Oct 18 07:01:50 2023"
+[dumpfile_size] 165253
+[savefile] "/home/ammar-bin-amir/Desktop/RTL_Design/Verilog_Practice/Tasks/Task3/Task3.gtkw"
+[timestart] 0
+[size] 1850 1006
+[pos] -1 -1
+*-14.643001 5370 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] task3_tb.
+[sst_width] 278
+[signals_width] 280
+[sst_expanded] 1
+[sst_vpaned_height] 299
+@28
+task3_tb.clk
+task3_tb.rst
+task3_tb.red
+task3_tb.yellow
+task3_tb.green
+@22
+task3_tb.uut.count_stop[4:0]
+@28
+task3_tb.uut.count_ready_to_go[1:0]
+@23
+task3_tb.uut.count_go[4:0]
+@28
+task3_tb.uut.count_ready_to_stop[1:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,409 @@
+$date
+	Fri Sep 08 16:03:08 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module task2_tb $end
+$var wire 1 ! mem_wr $end
+$var wire 1 " mem_rd $end
+$var wire 1 # load_pc $end
+$var wire 1 $ load_ir $end
+$var wire 1 % load_ac $end
+$var wire 1 & inc_pc $end
+$var wire 1 ' halt $end
+$var reg 1 ( clk $end
+$var reg 3 ) opcode [2:0] $end
+$var reg 1 * rst_ $end
+$var reg 1 + zero $end
+$scope module uut $end
+$var wire 1 ( clk $end
+$var wire 3 , opcode [2:0] $end
+$var wire 1 * rst_ $end
+$var wire 1 + zero $end
+$var parameter 32 - ADD $end
+$var parameter 3 . ALU_OP $end
+$var parameter 32 / AND $end
+$var parameter 32 0 HLT $end
+$var parameter 3 1 IDLE $end
+$var parameter 3 2 INST_ADDR $end
+$var parameter 3 3 INST_FETCH $end
+$var parameter 3 4 INST_LOAD $end
+$var parameter 32 5 JMP $end
+$var parameter 32 6 LDA $end
+$var parameter 3 7 OP_ADDR $end
+$var parameter 3 8 OP_FETCH $end
+$var parameter 32 9 SKZ $end
+$var parameter 32 : STO $end
+$var parameter 3 ; STORE $end
+$var parameter 32 < XOR $end
+$var reg 3 = current_state [2:0] $end
+$var reg 1 ' halt $end
+$var reg 1 & inc_pc $end
+$var reg 1 % load_ac $end
+$var reg 1 $ load_ir $end
+$var reg 1 # load_pc $end
+$var reg 1 " mem_rd $end
+$var reg 1 ! mem_wr $end
+$var reg 3 > next_state [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 <
+b111 ;
+b110 :
+b1 9
+b101 8
+b100 7
+b101 6
+b111 5
+b10 4
+b1 3
+b0 2
+b11 1
+b0 0
+b11 /
+b110 .
+b10 -
+$end
+#0
+$dumpvars
+bx >
+bx =
+bx ,
+x+
+x*
+bx )
+0(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#5
+1(
+#10
+0!
+0#
+0%
+0&
+0'
+0$
+0"
+b0 =
+b1 >
+0(
+b0 )
+b0 ,
+0+
+0*
+#15
+1(
+#20
+0(
+b1 )
+b1 ,
+#25
+1(
+#30
+0(
+b10 )
+b10 ,
+#35
+1(
+#40
+0(
+b11 )
+b11 ,
+#45
+1(
+#50
+0(
+b100 )
+b100 ,
+#55
+1(
+#60
+0(
+b101 )
+b101 ,
+#65
+1(
+#70
+0(
+b110 )
+b110 ,
+#75
+1(
+#80
+0(
+b111 )
+b111 ,
+#85
+1(
+#90
+0(
+b0 )
+b0 ,
+1+
+1*
+#95
+1"
+b10 >
+b1 =
+1(
+#100
+0(
+b1 )
+b1 ,
+#105
+1$
+b11 >
+b10 =
+1(
+#110
+0(
+b10 )
+b10 ,
+#115
+b100 >
+b11 =
+1(
+#120
+0(
+b11 )
+b11 ,
+#125
+1&
+0$
+0"
+b101 >
+b100 =
+1(
+#130
+0(
+b100 )
+b100 ,
+#135
+0&
+1"
+b110 >
+b101 =
+1(
+#140
+0(
+b101 )
+b101 ,
+#145
+1%
+b111 >
+b110 =
+1(
+#150
+0%
+0"
+0(
+b110 )
+b110 ,
+#155
+1!
+b0 >
+b111 =
+1(
+#160
+1#
+1&
+0(
+b111 )
+b111 ,
+#165
+0!
+0#
+0&
+b1 >
+b0 =
+1(
+#170
+0(
+#175
+1"
+b10 >
+b1 =
+1(
+#180
+0(
+#185
+1$
+b11 >
+b10 =
+1(
+#190
+0(
+#195
+b100 >
+b11 =
+1(
+#200
+0(
+#205
+1&
+0$
+0"
+b101 >
+b100 =
+1(
+#210
+1'
+0(
+b0 )
+b0 ,
+#215
+0&
+0'
+b110 >
+b101 =
+1(
+#220
+1"
+0(
+b10 )
+b10 ,
+#225
+1%
+b111 >
+b110 =
+1(
+#230
+0(
+b11 )
+b11 ,
+#235
+b0 >
+b111 =
+1(
+#240
+0(
+b100 )
+b100 ,
+#245
+0%
+0"
+b1 >
+b0 =
+1(
+#250
+0(
+#255
+1"
+b10 >
+b1 =
+1(
+#260
+0(
+#265
+1$
+b11 >
+b10 =
+1(
+#270
+0(
+#275
+b100 >
+b11 =
+1(
+#280
+0(
+#285
+1&
+0$
+0"
+b101 >
+b100 =
+1(
+#290
+0(
+b101 )
+b101 ,
+#295
+0&
+1"
+b110 >
+b101 =
+1(
+#300
+0"
+0(
+b1 )
+b1 ,
+#305
+1&
+b111 >
+b110 =
+1(
+#310
+1#
+0&
+0(
+b111 )
+b111 ,
+#315
+1&
+b0 >
+b111 =
+1(
+#320
+0(
+#325
+0#
+0&
+b1 >
+b0 =
+1(
+#330
+0(
+#335
+1"
+b10 >
+b1 =
+1(
+#340
+0(
+#345
+1$
+b11 >
+b10 =
+1(
+#350
+0(
+#355
+b100 >
+b11 =
+1(
+#360
+0(
+#365
+1&
+0$
+0"
+b101 >
+b100 =
+1(
+#370
+0(
+#375
+0&
+b110 >
+b101 =
+1(
+#380
+0(
+b110 )
+b110 ,
