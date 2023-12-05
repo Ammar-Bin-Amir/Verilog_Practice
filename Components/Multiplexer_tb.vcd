@@ -1,0 +1,63 @@
+$date
+	Wed Sep 20 13:31:12 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module mux_tb $end
+$var wire 1 ! out $end
+$var reg 4 " in [3:0] $end
+$var reg 2 # sel [1:0] $end
+$scope module uut $end
+$var wire 4 $ in [3:0] $end
+$var wire 2 % sel [1:0] $end
+$var reg 1 ! out $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 & i [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin $ivl_for_loop1 $end
+$var integer 32 ' j [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 '
+bx &
+bx %
+bx $
+bx #
+bx "
+x!
+$end
+#5
+x!
+b100 &
+b1 '
+b0 #
+b0 %
+b1001 "
+b1001 $
+#10
+x!
+b100 &
+b10 '
+b1 #
+b1 %
+#15
+x!
+b100 &
+b11 '
+b10 #
+b10 %
+#20
+x!
+b100 &
+b100 '
+b11 #
+b11 %
+#30

@@ -1,0 +1,47 @@
+$date
+	Mon Sep 18 19:15:24 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module nor_gate_tb $end
+$var wire 1 ! out $end
+$var reg 2 " in [1:0] $end
+$scope module uut $end
+$var wire 2 # in [1:0] $end
+$var wire 1 ! out $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 $ i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 $
+bx #
+bx "
+x!
+$end
+#5
+1!
+b1 $
+b0 "
+b0 #
+#10
+0!
+b10 $
+b1 "
+b1 #
+#15
+b11 $
+b10 "
+b10 #
+#20
+b100 $
+b11 "
+b11 #
+#30
