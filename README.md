@@ -34,3 +34,9 @@ Generate a waveform file that captures the simulated behavior of signals during 
 
 - [Zeeshan Rafique](https://github.com/zeeshanrafique23)
 - [Sajjad Ahmed](https://github.com/sajjadahmed677)
+
+## References
+
+- [ChipVerify](https://www.chipverify.com/tutorials/verilog)
+- [100 Days of RTL](https://github.com/raulbehl/100DaysOfRTL)
+
