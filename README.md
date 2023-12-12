@@ -4,9 +4,9 @@ Verilog is a hardware description language used to model and design digital syst
 
 ## Pre-Requisites
 
-- [Visual Studio Code](https://code.visualstudio.com/download) Integrated Development Environment
-- [Icarus Verilog](https://bleyer.org/icarus/) Simulator
-- [GTKWave](https://bleyer.org/icarus/) Waveform Viewer
+- Visual Studio Code Integrated Development Environment
+- Icarus Verilog Simulator
+- GTKWave Waveform Viewer
 
 ## Implementation and Execution
 
