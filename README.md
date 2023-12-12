@@ -39,5 +39,5 @@ Generate a waveform file that captures the simulated behavior of signals during 
 
 - [ChipVerify](https://www.chipverify.com/tutorials/verilog)
 - [100 Days of RTL](https://github.com/raulbehl/100DaysOfRTL)
-- [FPGACPU.CA](http://fpgacpu.ca/)
+- [FPGA Design Elements](http://fpgacpu.ca/)
 
