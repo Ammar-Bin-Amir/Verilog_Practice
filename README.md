@@ -30,9 +30,8 @@ vvp file_name_tb.vvp
 
 Generate a waveform file that captures the simulated behavior of signals during the testbench execution. This file can be visualized using a waveform viewer to analyze and understand the behavior of signals over time.
 
-## Instructors
+## Instructor
 
-- [Zeeshan Rafique](https://github.com/zeeshanrafique23)
 - [Sajjad Ahmed](https://github.com/sajjadahmed677)
 
 ## References
